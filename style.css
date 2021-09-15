@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    background-color: #fff;
+    width: 1000px;
+    height: 500px;
+    border-radius: 25px;
+    margin-top: 50px;
+    padding: 10px;
+    display: grid;
+    grid-template: auto /  auto auto;
+}
+
+.container h1 {
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 100%;
+}
+
+.payment span, .payment input {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.payment input{
+    border: none;
+    border-bottom: solid #33DDE8 2px;
+}
+
+#name , #number{
+    width: 400px;
+    height: 30px;
+}
+
+#mounth, #year, #cvc {
+    height: 30px;
+    width: 50px;
+    
+}
+
+textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+   
+    outline: 0;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+    max-width: 400px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+.mounth, .year, .cvc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 25px;
+
+}
+
+.payment button {
+    background-color: #33DDE8;
+    width: 200px;
+    height: 50px;
+    color: white;
+    text-align: center;
+    margin: auto;
+    border: none;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 20px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover{
+    background-color: #30afb8;
+    transform: translateY(-2px);
+}
+
+
+.esfer1, .esfer2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.esfer1 {
+    background-color: #F9AD3B;
+    right: 4%;
+    top: 20%;
+}
+
+.esfer2 {
+    background-color: #60EAFD;
+    right: 45%;
+    top: 55%;
+}
+
+.card {
+    position: relative;
+    width: 400px;
+    height: 275px;
+    right: 10%;
+    top: 20%;
+
+    background: rgba(57, 55, 55, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+
+
+    border-radius: 25px;
+    transform: rotate(10.88deg)
+}
+
+#visa, #mastercard {
+    position: absolute;
+    right: 2%;
+    top: 2%;
+    opacity: 0;
+   
+}
+
+#chip {
+    position: absolute;
+    top: 25%;
+}
+
+#cred-num, #cred-name, #text1, #text2, #cred-date, #cred-code {
+    position: absolute;
+    color: #fff;
+}
+
+#cred-num {
+    top: 50%;
+    font-size: 32px;
+    font-weight: 500;
+    
+    left: 3%;
+}
+
+#cred-name {
+    top: 70%;
+    left: 3%;
+    font-size: 20px;
+}
+
+#text1 {
+    left: 3%;
+    top: 82%;
+    width: 20px;
+    font-size: 7px;
+    color: #bfbfbf;
+}
+
+#cred-date {
+    top: 80%;
+    left: 10%;
+    font-size: 20px;
+}
+
+#text2 {
+    top: 82%;
+    left: 30%;
+    width: 20px;
+    font-size: 7px;
+    color: #bfbfbf;
+}
+
+#cred-code {
+    font-size: 20px;
+    left: 40%;
+    bottom: 9%;
+}
